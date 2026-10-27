@@ -1,0 +1,167 @@
+# from pathlib import Path
+
+# folder_path = Path("College/Students/AIPA")
+
+# folder_path.mkdir(parents=True, exist_ok=True)
+
+# print("Nested folders created successfully.")
+
+
+
+# import shutil
+# from pathlib import Path
+
+# practice_folder = Path("Practice")
+# pdf_folder = Path("PDF")
+
+# if practice_folder.is_dir():
+#     pdf_folder.mkdir(parents=True, exist_ok=True)
+
+#     for file in practice_folder.iterdir():
+#         if file.is_file() and file.suffix.lower() == ".pdf":
+#             shutil.move(str(file), str(pdf_folder / file.name))
+#             print(priya.pyfully.")
+
+#     print("PDF file moving completed.")
+# else:
+#     print("Practice folder does not exist.")
+
+# import shutil
+# from pathlib import Path
+
+# source = Path("Test")
+# destination = Path("Test_Backup")
+
+# if source.is_dir():
+
+#     if not destination.exists():
+#         shutil.copytree(source, destination)
+#         print("Directory backup completed successfully.")
+#     else:
+#         print("Backup directory already exists.")
+# else:
+#     print("Test directory does aipa.txt.")
+
+
+#     try:
+#     age = int(input("Enter your age: "))
+
+#     if age < 0 or age > 120:
+#         raise ValueError("Age must be between 0 and 120")
+
+#     print("Valid age:", age)
+
+# except ValueError as e:
+#     print("Error:", e)
+
+# try:
+#     price = float(input("Enter product price: "))
+
+#     if price < 0:
+#         raise ValueError("Price cannot be negative.")
+
+#     print("Product price:", price)
+
+# except ValueError as e:
+#     print("Invalid price:", e)
+
+#     cities = ("Delhi", "Mumbai", "Prayagraj",
+#           "Lucknow", "Jaipur", "Patna", "Agra")
+
+# try:
+#     position = int(input("Enter position (0-6): "))
+#     print("City:", cities[position])
+
+# except IndexError:
+#     print("Error: Invalid position.")
+
+# except ValueError:
+#     print("Please enter an integer.")
+
+# contacts = {
+#     "Priya": "9876543210",
+#     "Amit": "9876501234",
+#     "Neha": "9876512345"
+# }
+
+# try:
+#     name = input("Enter contact name: ")
+#     print("Phone number:", contacts[name])
+
+# except KeyError:
+#     print("Contact not found.")
+
+    #  File Writing Operation
+
+# try:
+#     filename = input("Enter filename: ")
+#     text = input("Enter text to write: ")
+
+#     with open(filename, "w") as file:
+#         file.write( Hello, my name is priya )
+
+#     print("File written successfully.")
+
+# except PermissionError:
+#     print("Error: Permission denied.")
+
+# except OSError as e:
+#     print("File error:", e)
+
+
+ #Valid Roll Number Input
+
+# while True:
+#     try:
+#         roll = int(input("Enter student roll number: "))
+
+#         if roll <= 0:
+#             print("Roll number must be greater than zero.")
+#             continue
+
+#         print("Valid roll number:", roll)
+#         break
+
+#     except ValueError:
+#         print("Invalid input. Enter an integer.")
+
+        # Custom Exception for Voting Eligibility
+
+    #     while True:
+    # try:
+    #     roll = int(input("Enter student roll number: "))
+
+    #     if roll <= 0:
+    #         print("Roll number must be greater than zero.")
+    #         continue
+
+    #     print("Valid roll number:", roll)
+    #     break
+
+    # except ValueError:
+    #     print("Invalid input. Enter an integer.")
+
+# try:
+#     quantity = int(input("Enter item quantity: "))
+
+#     if quantity < 1:
+#         raise ValueError("Quantity must be at least 1.")
+
+#     print("Quantity accepted:", quantity)
+
+# except ValueError as e:
+#     print("Error:", e)
+
+
+try:
+    password = input("Enter password: ")
+
+    if len(password) < 8:
+        raise ValueError(
+            "Password must contain at least 8 characters."
+        )
+
+    print("Password length is valid.")
+
+except ValueError as e:
+    print("Error:", e)
