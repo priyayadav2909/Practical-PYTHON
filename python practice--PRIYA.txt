@@ -1,0 +1,45 @@
+from pathlib import Path
+
+folder_path = Path("College/Students/AIPA")
+
+folder_path.mkdir(parents=True, exist_ok=True)
+
+print("Nested folders created successfully.")
+
+
+
+import shutil
+from pathlib import Path
+
+practice_folder = Path("Practice")
+pdf_folder = Path("PDF")
+
+if practice_folder.is_dir():
+    pdf_folder.mkdir(parents=True, exist_ok=True)
+
+    for file in practice_folder.iterdir():
+        if file.is_file() and file.suffix.lower() == ".pdf":
+            shutil.move(str(file), str(pdf_folder / file.name))
+            print(priya.pyfully.")
+
+    print("PDF file moving completed.")
+else:
+    print("Practice folder does not exist.")
+
+import shutil
+from pathlib import Path
+
+source = Path("Test")
+destination = Path("Test_Backup")
+
+if source.is_dir():
+    if not destination.exists():
+        shutil.copytree(source, destination)
+        print("Directory backup completed successfully.")
+    else:
+        print("Backup directory already exists.")
+else:
+    print("Test directory does aipa.txt.")
+
+
+    
